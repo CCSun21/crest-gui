@@ -1,13 +1,11 @@
 """Conformer search screen (iMTD-GC)."""
 
-from pathlib import Path
-
 from textual import on
 from textual.app import ComposeResult
 from textual.binding import Binding
 from textual.containers import Horizontal, ScrollableContainer, Vertical
 from textual.screen import Screen
-from textual.widgets import Button, Footer, Header, Input, Label, RichLog, Select, Static
+from textual.widgets import Button, Footer, Header, Input, Label, RichLog, Select
 
 from crest_tui.command_builder import build_command, build_legacy_command, preview_command
 from crest_tui.config import AppConfig

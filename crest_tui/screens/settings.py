@@ -53,10 +53,8 @@ class SettingsScreen(Screen):
             yield Label("Theme:")
             yield Select(options=THEME_OPTIONS, id="theme", value="dark")
             yield Static(id="status-msg", classes="status-msg")
-            with Button.Success("Save", id="btn-save"):
-                pass
-            with Button.Danger("Reset to Defaults", id="btn-reset"):
-                pass
+            yield Button("Save", variant="success", id="btn-save")
+            yield Button("Reset to Defaults", variant="error", id="btn-reset")
         yield Footer()
 
     def on_mount(self) -> None:

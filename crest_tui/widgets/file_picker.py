@@ -44,7 +44,7 @@ class FilePicker(Widget):
         self.query_one("#selected-label", Static).update(f"[green]Selected:[/green] {path}")
         self.post_message(self.FileChosen(self, str(path)))
 
-    class FileChosen(Widget.Message if hasattr(Widget, "Message") else object):  # type: ignore[misc]
+    class FileChosen(Widget.Message):
         """Message emitted when a file is chosen."""
 
         def __init__(self, widget: "FilePicker", path: str) -> None:
