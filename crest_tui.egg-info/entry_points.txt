@@ -1,0 +1,2 @@
+[console_scripts]
+crest-tui = crest_tui.app:main

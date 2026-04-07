@@ -1,0 +1,11 @@
+textual>=0.50
+rich
+tomli-w
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+pytest
+textual-dev
+pytest-asyncio

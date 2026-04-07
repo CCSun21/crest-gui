@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crest-tui"
+version = "0.1.0"
+description = "Terminal User Interface for CREST computational chemistry tool"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.50",
+    "rich",
+    "tomli; python_version < '3.11'",
+    "tomli-w",
+]
+
+[project.scripts]
+crest-tui = "crest_tui.app:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "textual-dev", "pytest-asyncio"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crest_tui*"]

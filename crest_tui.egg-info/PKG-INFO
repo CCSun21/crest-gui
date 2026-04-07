@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: crest-tui
+Version: 0.1.0
+Summary: Terminal User Interface for CREST computational chemistry tool
+Requires-Python: >=3.10
+License-File: COPYING
+License-File: COPYING.LESSER
+Requires-Dist: textual>=0.50
+Requires-Dist: rich
+Requires-Dist: tomli; python_version < "3.11"
+Requires-Dist: tomli-w
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: textual-dev; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Dynamic: license-file
