@@ -10,3 +10,14 @@ _build*
 _dist*
 src/crest
 bin/
+
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
